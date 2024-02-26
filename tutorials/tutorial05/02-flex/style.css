@@ -17,7 +17,25 @@ display:flex; justify-content: center;
 
 }
 
+.home {
+    justify-content: center;
+    background-color: aqua;
+
+}
 
 
+.bio{
+    justify-content: center;
+    background-color: blueviolet;
+}
 
+.portfolio {
+    justify-content: center;
+    background-color: darkred;
+}
+
+.contact{
+    justify-content: center;
+    background-color: lightseagreen;
+}
  
