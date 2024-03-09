@@ -54,6 +54,7 @@ section {
     line-height: 2em;
     margin-bottom: 20px;
     padding: 4px 15px;
+    transition: all 0.5s;
 }
 #section3 input:focus {
     background-color: white;

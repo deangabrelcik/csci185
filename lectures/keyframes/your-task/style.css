@@ -25,18 +25,18 @@ main {
     left: calc(50vw - 50px); 
     font-size: 200px;
 
-    /* animation-timing-function: linear;
+    animation-timing-function: linear;
     animation-fill-mode: forwards; 
     animation-name: sunrise;
     animation-delay: 1s;
-    animation-duration: 12s; */
+    animation-duration: 12s;
 }
 
-/* @keyframes sunrise {
+@keyframes sunrise {
     0% { 
-        transform: translate(0, 0);
+        /* /* transform: translate(0, 0);
         color: #FF3300;
-        font-size: 200px;
+        font-size: 200px; */
     }
     100% { 
         transform: translate(0, -70vh); 
