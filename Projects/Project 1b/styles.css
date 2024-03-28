@@ -8,13 +8,17 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     font-size: 16px;
+    color: lavender;
+    background-image: url(https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Funcash.sidearmsports.com%2Fimages%2F2023%2F6%2F7%2FDeanGabrelcik.png&width=180&height=270);
+    background-size: cover;
 }
 
 h1, h2 {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'roboto', sans-serif;
     font-weight: bold;
     margin-bottom: 1rem;
     font: bolder;
+    color: blue;
 }
 
 header, footer {
