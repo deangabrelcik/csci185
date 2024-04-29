@@ -23,7 +23,7 @@ function makeOrange() {
     document.querySelector("box").style.backgroundColor="orange";
 }
 
-AudioParam
+
 
 
 
