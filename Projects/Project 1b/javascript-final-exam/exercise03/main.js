@@ -17,13 +17,6 @@ function setup() {
     drawGrid(canvasWidth, canvasHeight);
 }
 
-// modify this function so that it honors the following parameters:
-//   * x - the x-position of the square (center)
-//   * y - the y-position of the square (center)
-//   * size - the width / height of the square
-//   * color1 - the color of the largest square
-//   * color2 - the color of the medium square
-//   * color3 - the color of the smallest square
 
 function drawSquares(x, y, size, color1, color2, color3) {
     console.log(x, y, size, color1, color2, color3);
