@@ -13,10 +13,25 @@ function search (ev) {
 }
 
 async function getTracks (term) {
-    console.log(`
-        get tracks from spotify based on the search term
-        "${term}" and load them into the #tracks section 
-        of the DOM...`);
+    const url= `https: //www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}` ;
+    const response= await fetch(url);
+    const trackData= await response.json();
+    const firstTrack=trackData[0]
+    console.log(trackData);
+    const template=`
+    <section class="track-item preview">
+    <img src="${track.album.image_url}">
+    <i class="fas play-track fa-play" aria-hidden="true"></i>
+    <div class="label">
+        <h2>Black Swan</h2>
+        <p>
+            BTS
+        </p>
+    </div>
+</section>
+    `;
+Document.querySelector("#tracks").innerHTMl=template;
+
 }
 
 async function getAlbums (term) {
@@ -27,22 +42,19 @@ async function getAlbums (term) {
 }
 
 async function getArtist (term) {
-    const url=`${baseURL}?q=$(term)&type=artist&limit=1`;
-    console.log(url);
-    const request= await fetch(url);
-    const data= await request.json();
-    console.log(data);
-    console.log(data[0].name);
-    console.log(data[0].image_url);
-    console.log(data[0].spotify_url);
+    const url= `https: //www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}` ;
+    const response= await fetch(url);
+    const artistData= await response.json();
+    const artist= artistData[0];
+
 
     const snippet= `
-    <section class="artist-card" id="3Nrfpe0tUJi4K4DXYWgMUX">
+    <section class="artist-card" id="${artist.id}">
     <div>
-        <img src="${data[0].image_url}">
-        <h2>${data[0].name}</h2>
+        <img src="${artist.image_url}">
+        <h2>${artist.name}</h2>
         <div class="footer">
-            <a href="${data[0].spotify_url}" target="_blank">
+            <a href="${artist.spotify_url}" target="_blank">
                 view on spotify
             </a>
         </div>
